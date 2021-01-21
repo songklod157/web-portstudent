@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/styleconfirm.css">
+    <link rel="stylesheet" type="text/css" href="css/stylenav.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+                
+        </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/white.png"></a>
+            </div>
+            <div class="container">
+                <a href="aboutus.html">ABOUT US</a>
+                <div class="dropdown">
+                  <button class="dropbtn">PRODUCT 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="logo.html">LOGO</a>
+                    <a href="photo.html">PHOTO</a>
+                    <a href="drawing.html">DRAWING</a>
+                  </div>
+                </div>
+                <a href="cart.html">CART</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="#modal" class="v1">LOGIN</a>
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <a href="#" class="modal__close">&times;</a>
+                        <h1 class="modal__heading"><center>SIGN IN</center></h1>
+                        <form action="">
+                            <h3 class="modal__heading2">E-mail</h3>
+                            <input type="text" placeholder="E-mail" class="field_long"> 
+                            <h3 class="modal__heading2">Password</h3>
+                            <input type="password" placeholder="Password" class="field_long">
+                            <a href="" class="modal__box2" >SIGN IN</a>
+                        </form> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </nav>
+    <section class="sec1">
+
+              <div class="boxx1">
+                  <img src="img/Yes@2x.png">
+              </div> 
+            <div class="already"> 
+              <h1>Your order have already sent!</h1>
+            </div> 
+              <div class="boxx2">
+                    <button class="bb11" onclick= "window.location.href='Cart.html';">GO BACK</button>
+                    <button class="bb22" onclick= "window.location.href='product.html';">BUY AGAIN</button>
+              </div>
+              
+    </section>
+</body>
+</html>

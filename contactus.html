@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/footercontactus.css">
+    <link rel="stylesheet" href="css/stylecontactus.css">
+    <link rel="stylesheet" href="css/stylenav.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/Popup.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+                
+        </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/white.png"></a>
+            </div>
+            <div class="container">
+                <a href="aboutus.html">ABOUT US</a>
+                <div class="dropdown">
+                  <button class="dropbtn">PRODUCT 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="logo.html">LOGO</a>
+                    <a href="photo.html">PHOTO</a>
+                    <a href="drawing.html">DRAWING</a>
+                  </div>
+                </div>
+                <a href="Cart.html">CART</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="#modal" class="v1">LOGIN</a>
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <a href="#" class="modal__close">&times;</a>
+                        <h1 class="modal__heading"><center>SIGN IN</center></h1>
+                        <form action="">
+                            <h3 class="modal__heading2">E-mail</h3>
+                            <input type="text" placeholder="E-mail" class="field_long"> 
+                            <h3 class="modal__heading2">Password</h3>
+                            <input type="password" placeholder="Password" class="field_long">
+                            <a href="" class="modal__box2" >SIGN IN</a>
+                        </form> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </nav>
+<!--ส่วนกลาง--> 
+<div class="contactus">
+<h1>CONTACT US</h1>
+</div>
+    <div class="container3">
+      <div class="gridwrapper">
+        <div class="card">
+          <div class="img">
+            <img src="img/smallcontact/C03.jpg" width="170px" height="200px">
+          </div>
+          <div class="content">
+            <h1>Napat Nujern</h1>
+            <p>CEO</p>
+            <p>I love deadlines. I love the whooshing noise they make as they go by.</p>
+                   
+            
+            <!-- Trigger/Open The Modal -->
+            <button class="contact" id="myBtn">CONTACT</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal2">
+                <!-- Modal content -->
+                <div class="modal-content2">
+                  <span class="close">&times;</span>
+                  <div class="modal-content3">
+                    <img src="img/bigcontact/B03.jpg">
+                    <div class="modal-content4">
+                      <h1>Napat Nujern</h1>
+                      <h2>CEO</h2>
+                      <p>_________________________________________________</p>
+                      <h2>Tel : 083-0655692</h2>
+                      <h2>E-mail : looknam375@gmail.com</h2>
+                      <a href="https://www.facebook.com/LooknamNapat" target="_blank">
+                        <div class="modal-content5">
+                        <img src="img/F.png" width="20px" height="20px">
+                        </div>
+                      </a>
+                    </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+            <script>
+              // Get the modal
+              var modal1 = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn1 = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span1 = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on the button, open the modal
+              btn1.onclick = function() {
+              modal1.style.display = "block";
+              }
+
+              // When the user clicks on <span> (x), close the modal
+              span1.onclick = function() {
+              modal1.style.display = "none";
+              }
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+              if (event.target == modal1) {
+              modal1.style.display = "none";
+              }
+              }
+              </script>
+
+          </div>
+        </div>
+        <div class="card">
+            <div class="img">
+              <img src="img/smallcontact/C08.jpg" width="170px" height="200px">
+            </div>
+            <div class="content">
+              <h1>Songklod Duangkeaw</h1>
+              <p>Art director</p>
+              <p width="60px" height="40px">Do you know pleasure in the job puts perfection in the work and enjoy it.</p>        
+              
+              <!-- Trigger/Open The Modal -->
+              <button class="contact" id="myBtn2">CONTACT</button>
+              <!-- The Modal -->
+              <div id="myModal2" class="modal2">
+                  <!-- Modal content -->
+                  <div class="modal-content2">
+                    <span class="close2">&times;</span>
+                    <div class="modal-content3">
+                      <img src="img/bigcontact/B08.jpg">
+                      <div class="modal-content4">
+                        <h1>Songklod Duangkeaw</h1>
+                        <h2>Art director</h2>
+                        <p>_________________________________________________</p>
+                        <h2>Tel : 061-2786089</h2>
+                        <h2>E-mail : chongklod18@gmail.com</h2>
+                        <a href="https://www.facebook.com/songklod.duangkaw" target="_blank">
+                          <div class="modal-content5">
+                          <img src="img/F.png" width="20px" height="20px">
+                          </div>
+                        </a>
+                      </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+              <script>
+                // Get the modal
+                var modal2 = document.getElementById("myModal2");
+  
+                // Get the button that opens the modal
+                var btn2 = document.getElementById("myBtn2");
+  
+                // Get the <span> element that closes the modal
+                var span2 = document.getElementsByClassName("close2")[0];
+  
+                // When the user clicks on the button, open the modal
+                btn2.onclick = function() {
+                modal2.style.display = "block";
+                }
+  
+                // When the user clicks on <span> (x), close the modal
+                span2.onclick = function() {
+                modal2.style.display = "none";
+                }
+  
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal2) {
+                modal2.style.display = "none";
+                }
+                }
+                </script>
+  
+            </div>
+          </div>
+          <div class="card">
+              <div class="img">
+                <img src="img/smallcontact/C07.jpg" width="170px" height="200px">
+              </div>
+              <div class="content">
+                <h1>Sujira Pangate</h1>
+                <p>Graphic Designer</p>
+                <p>In the name of God, stop a moment, cease your work, look around you.</p>          
+                
+                <!-- Trigger/Open The Modal -->
+                <button class="contact" id="myBtn3">CONTACT</button>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal2">
+                    <!-- Modal content -->
+                    <div class="modal-content2">
+                      <span class="close3">&times;</span>
+                      <div class="modal-content3">
+                        <img src="img/bigcontact/B07.jpg">
+                        <div class="modal-content4">
+                          <h1>Sujira Pangate</h1>
+                          <h2>Graphic Designer</h2>
+                          <p>_________________________________________________</p>
+                          <h2>Tel : 081-4751178</h2>
+                          <h2>E-mail : thedesignblack@gmail.com</h2>
+                          <a href="https://www.facebook.com/sujira.pangate" target="_blank">
+                            <div class="modal-content5">
+                            <img src="img/F.png" width="20px" height="20px">
+                            </div>
+                          </a>
+                        </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                <script>
+                  // Get the modal
+                  var modal3 = document.getElementById("myModal3");
+    
+                  // Get the button that opens the modal
+                  var btn3 = document.getElementById("myBtn3");
+    
+                  // Get the <span> element that closes the modal
+                  var span3 = document.getElementsByClassName("close3")[0];
+    
+                  // When the user clicks on the button, open the modal
+                  btn3.onclick = function() {
+                  modal3.style.display = "block";
+                  }
+    
+                  // When the user clicks on <span> (x), close the modal
+                  span3.onclick = function() {
+                  modal3.style.display = "none";
+                  }
+    
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                  if (event.target == modal3) {
+                  modal3.style.display = "none";
+                  }
+                  }
+                  </script>
+    
+              </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                  <img src="img/smallcontact/C04.jpg" width="170px" height="200px">
+                </div>
+                <div class="content">
+                  <h1>Piyapong Juibang</h1>
+                  <p>Portrait Photographer</p>
+                  <p>Be nice to nerds. You may end up working for them. We all could. so do it !</p>          
+                  
+                  <!-- Trigger/Open The Modal -->
+                  <button class="contact" id="myBtn4">CONTACT</button>
+                  <!-- The Modal -->
+                  <div id="myModal4" class="modal2">
+                      <!-- Modal content -->
+                      <div class="modal-content2">
+                        <span class="close4">&times;</span>
+                        <div class="modal-content3">
+                          <img src="img/bigcontact/B04.jpg">
+                          <div class="modal-content4">
+                            <h1>Piyapong Juibang</h1>
+                            <h2>Portrait Photographer</h2>
+                            <p>_________________________________________________</p>
+                            <h2>Tel : 080-6507378</h2>
+                            <h2>E-mail : Viruspee23@gmai.com</h2>
+                            <a href="https://www.facebook.com/profile.php?id=100001732269828" target="_blank">
+                              <div class="modal-content5">
+                              <img src="img/F.png" width="20px" height="20px">
+                              </div>
+                            </a>
+                          </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                  <script>
+                    // Get the modal
+                    var modal4 = document.getElementById("myModal4");
+      
+                    // Get the button that opens the modal
+                    var btn4 = document.getElementById("myBtn4");
+      
+                    // Get the <span> element that closes the modal
+                    var span4 = document.getElementsByClassName("close4")[0];
+      
+                    // When the user clicks on the button, open the modal
+                    btn4.onclick = function() {
+                    modal4.style.display = "block";
+                    }
+      
+                    // When the user clicks on <span> (x), close the modal
+                    span4.onclick = function() {
+                    modal4.style.display = "none";
+                    }
+      
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal4) {
+                    modal4.style.display = "none";
+                    }
+                    }
+                    </script>
+      
+                </div>
+              </div>
+              <div class="card">
+                  <div class="img">
+                    <img src="img/smallcontact/C06.jpg" width="170px" height="200px">
+                  </div>
+                  <div class="content">
+                    <h1>Radanuch Khankaew</h1>
+                    <p>Graphic Designer</p>
+                    <p>I always arrive late at the office, but I make up for it by leaving early.</p>          
+                    
+                    <!-- Trigger/Open The Modal -->
+                    <button class="contact" id="myBtn5">CONTACT</button>
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modal2">
+                        <!-- Modal content -->
+                        <div class="modal-content2">
+                          <span class="close5">&times;</span>
+                          <div class="modal-content3">
+                            <img src="img/bigcontact/B06.jpg">
+                            <div class="modal-content4">
+                              <h1>Radanuch Khankaew</h1>
+                              <h2>Graphic Designer</h2>
+                              <p>_________________________________________________</p>
+                              <h2>Tel : 064-0628968</h2>
+                              <h2>E-mail : noinakung28@gmail.com</h2>
+                              <a href="https://www.facebook.com/MiyazawaKushi" target="_blank">
+                                <div class="modal-content5">
+                                <img src="img/F.png" width="20px" height="20px">
+                                </div>
+                              </a>
+                            </div>
+                            </div>
+                            
+                            
+                          </div>
+                        </div>
+                    <script>
+                      // Get the modal
+                      var modal5 = document.getElementById("myModal5");
+        
+                      // Get the button that opens the modal
+                      var btn5 = document.getElementById("myBtn5");
+        
+                      // Get the <span> element that closes the modal
+                      var span5 = document.getElementsByClassName("close5")[0];
+        
+                      // When the user clicks on the button, open the modal
+                      btn5.onclick = function() {
+                      modal5.style.display = "block";
+                      }
+        
+                      // When the user clicks on <span> (x), close the modal
+                      span5.onclick = function() {
+                      modal5.style.display = "none";
+                      }
+        
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                      if (event.target == modal5) {
+                      modal5.style.display = "none";
+                      }
+                      }
+                      </script>
+        
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                      <img src="img/smallcontact/C02.jpg" width="170px" height="200px">
+                    </div>
+                    <div class="content">
+                      <h1>Nontanat Jaikitsuwan</h1>
+                      <p>Commercial Photographer</p>
+                      <p>It has been my philosophy of life that difficulties vanish when faced boldly.</p>          
+                      
+                      <!-- Trigger/Open The Modal -->
+                      <button class="contact" id="myBtn6">CONTACT</button>
+                      <!-- The Modal -->
+                      <div id="myModal6" class="modal2">
+                          <!-- Modal content -->
+                          <div class="modal-content2">
+                            <span class="close6">&times;</span>
+                            <div class="modal-content3">
+                              <img src="img/bigcontact/B02.jpg">
+                              <div class="modal-content4">
+                                <h1>Nontanat Jaikitsuwan</h1>
+                                <h2>Commercial Photographer</h2>
+                                <p>_________________________________________________</p>
+                                <h2>Tel : 094-8783804</h2>
+                                <h2>E-mail : mackenz160699@gmail.com</h2>
+                                <a href="https://www.facebook.com/mackenz.deltamez" target="_blank">
+                                  <div class="modal-content5">
+                                  <img src="img/F.png" width="20px" height="20px">
+                                  </div>
+                                </a>
+                              </div>
+                              </div>
+                              
+                              
+                            </div>
+                          </div>
+                      <script>
+                        // Get the modal
+                        var modal6 = document.getElementById("myModal6");
+          
+                        // Get the button that opens the modal
+                        var btn6 = document.getElementById("myBtn6");
+          
+                        // Get the <span> element that closes the modal
+                        var span6 = document.getElementsByClassName("close6")[0];
+          
+                        // When the user clicks on the button, open the modal
+                        btn6.onclick = function() {
+                        modal6.style.display = "block";
+                        }
+          
+                        // When the user clicks on <span> (x), close the modal
+                        span6.onclick = function() {
+                        modal6.style.display = "none";
+                        }
+          
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                        if (event.target == modal6) {
+                        modal6.style.display = "none";
+                        }
+                        }
+                        </script>
+          
+                    </div>
+                  </div>
+                  <div class="card">
+                      <div class="img">
+                        <img src="img/smallcontact/C10.jpg" width="170px" height="200px">
+                      </div>
+                      <div class="content">
+                        <h1>Nattakrit Nernkeeree</h1>
+                        <p>Scientific Photographer</p>
+                        <p>When a man tells you that he got rich through hard work, ask him "Whose?"</p>          
+                        
+                        <!-- Trigger/Open The Modal -->
+                        <button class="contact" id="myBtn7">CONTACT</button>
+                        <!-- The Modal -->
+                        <div id="myModal7" class="modal2">
+                            <!-- Modal content -->
+                            <div class="modal-content2">
+                              <span class="close7">&times;</span>
+                              <div class="modal-content3">
+                                <img src="img/bigcontact/B10.jpg">
+                                <div class="modal-content4">
+                                  <h1>Nattakrit Nernkeeree</h1>
+                                  <h2>Scientific Photographer</h2>
+                                  <p>_________________________________________________</p>
+                                  <h2>Tel : 088-1997585</h2>
+                                  <h2>E-mail : earthpeed@gmail.com</h2>
+                                  <a href="https://www.facebook.com/nattakrit.shitman" target="_blank">
+                                    <div class="modal-content5">
+                                    <img src="img/F.png" width="20px" height="20px">
+                                    </div>
+                                  </a>
+                                </div>
+                                </div>
+                                
+                                
+                              </div>
+                            </div>
+                        <script>
+                          // Get the modal
+                          var modal7 = document.getElementById("myModal7");
+            
+                          // Get the button that opens the modal
+                          var btn7 = document.getElementById("myBtn7");
+            
+                          // Get the <span> element that closes the modal
+                          var span7 = document.getElementsByClassName("close7")[0];
+            
+                          // When the user clicks on the button, open the modal
+                          btn7.onclick = function() {
+                          modal7.style.display = "block";
+                          }
+            
+                          // When the user clicks on <span> (x), close the modal
+                          span7.onclick = function() {
+                          modal7.style.display = "none";
+                          }
+            
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                          if (event.target == modal7) {
+                          modal7.style.display = "none";
+                          }
+                          }
+                          </script>
+            
+                      </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                          <img src="img/smallcontact/C09.jpg" width="170px" height="200px">
+                        </div>
+                        <div class="content">
+                          <h1>Nantawat Sukhoyachai</h1>
+                          <p>Fine art Photographer</p>
+                          <p>Go on with your work as usual, for work is a blessed solace. i'm the best</p>          
+                          
+                          <!-- Trigger/Open The Modal -->
+                          <button class="contact" id="myBtn8">CONTACT</button>
+                          <!-- The Modal -->
+                          <div id="myModal8" class="modal2">
+                              <!-- Modal content -->
+                              <div class="modal-content2">
+                                <span class="close8">&times;</span>
+                                <div class="modal-content3">
+                                  <img src="img/bigcontact/B09.jpg">
+                                  <div class="modal-content4">
+                                    <h1>Nantawat Sukhoyachai</h1>
+                                    <h2>Fine art Photographer</h2>
+                                    <p>_________________________________________________</p>
+                                    <h2>Tel : 095-8025182</h2>
+                                    <h2>E-mail : topdeviltop47@gmail.com</h2>
+                                    <a href="https://www.facebook.com/ttop.eiei" target="_blank">
+                                      <div class="modal-content5">
+                                      <img src="img/F.png" width="20px" height="20px">
+                                      </div>
+                                    </a>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                </div>
+                              </div>
+                          <script>
+                            // Get the modal
+                            var modal8 = document.getElementById("myModal8");
+              
+                            // Get the button that opens the modal
+                            var btn8 = document.getElementById("myBtn8");
+              
+                            // Get the <span> element that closes the modal
+                            var span8 = document.getElementsByClassName("close8")[0];
+              
+                            // When the user clicks on the button, open the modal
+                            btn8.onclick = function() {
+                            modal8.style.display = "block";
+                            }
+              
+                            // When the user clicks on <span> (x), close the modal
+                            span8.onclick = function() {
+                            modal8.style.display = "none";
+                            }
+              
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                            if (event.target == modal8) {
+                            modal8.style.display = "none";
+                            }
+                            }
+                            </script>
+              
+                        </div>
+                      </div>
+                      <div class="card">
+                          <div class="img">
+                            <img src="img/smallcontact/C01.jpg" width="170px" height="200px">
+                          </div>
+                          <div class="content">
+                            <h1>Jinnapat Longsawas</h1>
+                            <p>Logo designer</p>
+                            <p>Nothing is really work unless you would rather be doing something else.</p>          
+                            
+                            <!-- Trigger/Open The Modal -->
+                            <button class="contact" id="myBtn9">CONTACT</button>
+                            <!-- The Modal -->
+                            <div id="myModal9" class="modal2">
+                                <!-- Modal content -->
+                                <div class="modal-content2">
+                                  <span class="close9">&times;</span>
+                                  <div class="modal-content3">
+                                    <img src="img/bigcontact/B01.jpg">
+                                    <div class="modal-content4">
+                                      <h1>Jinnapat Longsawas</h1>
+                                      <h2>Logo designer</h2>
+                                      <p>_________________________________________________</p>
+                                      <h2>Tel : 099-5037609</h2>
+                                      <h2>E-mail : 26249@sattha.ac.th</h2>
+                                      <a href="https://www.facebook.com/mek.jnp" target="_blank">
+                                        <div class="modal-content5">
+                                        <img src="img/F.png" width="20px" height="20px">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                  </div>
+                                </div>
+                            <script>
+                              // Get the modal
+                              var modal9 = document.getElementById("myModal9");
+                
+                              // Get the button that opens the modal
+                              var btn9 = document.getElementById("myBtn9");
+                
+                              // Get the <span> element that closes the modal
+                              var span9 = document.getElementsByClassName("close9")[0];
+                
+                              // When the user clicks on the button, open the modal
+                              btn9.onclick = function() {
+                              modal9.style.display = "block";
+                              }
+                
+                              // When the user clicks on <span> (x), close the modal
+                              span9.onclick = function() {
+                              modal9.style.display = "none";
+                              }
+                
+                              // When the user clicks anywhere outside of the modal, close it
+                              window.onclick = function(event) {
+                              if (event.target == modal9) {
+                              modal9.style.display = "none";
+                              }
+                              }
+                              </script>
+                
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                              <img src="img/smallcontact/C05.jpg" width="170px" height="200px">
+                            </div>
+                            <div class="content">
+                              <h1>Saran Chomsuwan</h1>
+                              <p>Logo designer</p>
+                              <p>The caterpillar does all the work, but the butterfly gets all the publicity.</p>          
+                              
+                              <!-- Trigger/Open The Modal -->
+                              <button class="contact" id="myBtn10">CONTACT</button>
+                              <!-- The Modal -->
+                              <div id="myModal10" class="modal2">
+                                  <!-- Modal content -->
+                                  <div class="modal-content2">
+                                    <span class="close10">&times;</span>
+                                    <div class="modal-content3">
+                                      <img src="img/bigcontact/B05.jpg">
+                                      <div class="modal-content4">
+                                        <h1>Saran Chomsuwan</h1>
+                                        <h2>Logo designer</h2>
+                                        <p>_________________________________________________</p>
+                                        <h2>Tel : 061-9259541</h2>
+                                        <h2>E-mail : pure.saran@gmail.com</h2>
+                                        <a href="https://www.facebook.com/pure.saran" target="_blank">
+                                          <div class="modal-content5">
+                                          <img src="img/F.png" width="20px" height="20px">
+                                          </div>
+                                        </a>
+                                      </div>
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                  </div>
+                              <script>
+                                // Get the modal
+                                var modal10 = document.getElementById("myModal10");
+                  
+                                // Get the button that opens the modal
+                                var btn10 = document.getElementById("myBtn10");
+                  
+                                // Get the <span> element that closes the modal
+                                var span10 = document.getElementsByClassName("close10")[0];
+                  
+                                // When the user clicks on the button, open the modal
+                                btn10.onclick = function() {
+                                modal10.style.display = "block";
+                                }
+                  
+                                // When the user clicks on <span> (x), close the modal
+                                span10.onclick = function() {
+                                modal10.style.display = "none";
+                                }
+                  
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                if (event.target == modal10) {
+                                modal10.style.display = "none";
+                                }
+                                }
+                                </script>
+                  
+                            </div>
+                          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+<!--ส่วนกลาง-->
+          
+          <div class="page-wraper">
+
+          </div>
+          <div class="footer">
+                <div class="footer-content">
+                    
+                    <div class="footer-section about">
+                        <h1 class="logo-text"><span>E</span>-Here</h1>
+                        <p>E-Here is a E-commerce website for design everything you want</p>
+                        <div class="contact">
+                            <span><i class="fa-phone"></i>123-456-789</span>
+                            <span><i class="fa-envelope"></i>info@Everything-Here.com</span><br>
+                        </div>
+                        <div class="socials">
+                          <br>
+                          <a href="#"><img src="img/F.png"><i class="fab fa-facebook"></i></a>
+                          <a href="#"><img src="img/I.png"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><img src="img/T.png"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><img src="img/Y.png"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                          <a href="index.html"><li>Home</li></a>
+                          <a href="aboutus.html"><li>About us</li></a>
+                          <a href="product.html"><li>Product</li></a>
+                          <a href="contactus.html"><li>Contact us</li></a>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section contact-form">
+                        <h2>Contact us</h2>
+                        <br>
+                        <form action="index.html" method="post">
+                            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."><br>
+                            <input name="message" class="text-input contact-input" placeholder="Your message..."></textarea><br>
+                            <button type="submit" class="btn btn-big contact-btn">
+                                <i class="fas fa-envelope"></i>
+                                Send
+                            </button>
+                        </form>
+                    </div>
+        
+                </div>
+                <div class="footer-bottom">
+                    &copy; Everything-Here | Designed by CMM
+                </div>
+            </div>
+</body>
+</html>

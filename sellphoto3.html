@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesell.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" type="text/css" href="css/stylenav.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/assign.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+                
+        </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/white.png"></a>
+            </div>
+            <div class="container">
+                <a href="aboutus.html">ABOUT US</a>
+                <div class="dropdown">
+                  <button class="dropbtn">PRODUCT 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="logo.html">LOGO</a>
+                    <a href="photo.html">PHOTO</a>
+                    <a href="drawing.html">DRAWING</a>
+                  </div>
+                </div>
+                <a href="cart.html">CART</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="#modal" class="v1">LOGIN</a>
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <a href="#" class="modal__close">&times;</a>
+                        <h1 class="modal__heading"><center>SIGN IN</center></h1>
+                        <form action="">
+                            <h3 class="modal__heading2">E-mail</h3>
+                            <input type="text" placeholder="E-mail" class="field_long"> 
+                            <h3 class="modal__heading2">Password</h3>
+                            <input type="password" placeholder="Password" class="field_long">
+                            <a href="" class="modal__box2" >SIGN IN</a>
+                        </form> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </nav>
+    <script language="javascript">
+        var n=1;
+        function pix(){
+            switch (n){
+                case 1: document.getElementById('picture').src="img/photo3/photo1.jpg";break;
+                case 2: document.getElementById('picture').src="img/photo3/photo2.jpg";break;
+                case 3: document.getElementById('picture').src="img/photo3/photo3.jpg";break;
+                case 4: document.getElementById('picture').src="img/photo3/photo4.jpg";break;
+                case 5: document.getElementById('picture').src="img/photo3/photo5.jpg";break;
+            }
+        }
+    </script>
+    <div class="space">
+<div class="button" style="float: left;margin-top: 100px;">
+             <button onclick="n=1; pix();"><img src="img/photo3/photo1.jpg" class="B1"></button><br>           
+             <button onclick="n=2; pix();"><img src="img/photo3/photo2.jpg" class="B2"></button><br>            
+             <button onclick="n=3; pix();"><img src="img/photo3/photo3.jpg" class="B3"></button><br>             
+             <button onclick="n=4; pix();"><img src="img/photo3/photo4.jpg" class="B4"></button><br>             
+             <button onclick="n=5; pix();"><img src="img/photo3/photo5.jpg" class="B5"></button>                            
+</div>
+<div class="spec11"></div>
+
+<div class="pic">
+        <img id="picture" src="img/photo3/photo1.jpg" class="picshow"><br>
+</div>
+
+<section class="pd">
+    <div class="pd_area">
+        <div class="pd_text">
+          <h1>PHOTO package set 3</h1>
+          <p>We can do animal photography. Both general pets that want to take advertising pictures or </p>
+            <p>take pictures of wildlife outside the area Because we have photographers that are experts in</p>
+            <p>  photographing various animals.</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          <div class="buy3">
+            <button class="buy2" onclick="addToCart('PHOTO package set 3',50000,Notification())">ADD TO CART</button>
+            <div class="buy">  
+            <h1>50,000 ฿</h1> 
+            </div>
+            </div>
+        </div>
+  </div>
+</section>
+          <div class="page-wraper">
+
+          </div>
+        </div>
+</body>
+</html>

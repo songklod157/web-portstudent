@@ -1,0 +1,49 @@
+ .infor1_area img{
+    padding: 10px;
+    width: 536px;
+    height: 704px;
+  }
+  .infor1_text{
+    color: #f1c30e;
+    text-align: center;
+    float: right;
+    margin-right: 100px;
+    margin-top: 200px;
+    text-align: right;
+   
+  }
+  .infor1_text h1{
+    font-family: ;
+    font-size: 4em;
+    margin: 0;
+  }
+  .infor1_text h2{
+    font-family: ;
+    font-size: 2em;
+    margin-top:100px;
+  }
+  .infor1_area img{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .button1 {
+    font-family: ;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 400px; 
+    height: 80px;
+    border-radius: 100px;
+    margin-right: 5px;
+    margin-top: 60px;
+  }
+  
+  .button1:hover {
+    background-color: #f1c30e;
+    color:black;
+  }

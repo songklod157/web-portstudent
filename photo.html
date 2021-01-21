@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/footerphoto.css">
+    <link rel="stylesheet" href="css/style3product.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" type="text/css" href="css/stylenav.css">
+    <link rel="stylesheet" href="button-bubbly.css">
+    <script src="js/bubly.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/assign.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if ($(window).scrollTop()){
+                $('nav').addClass('black');
+            }
+            else{
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/white.png"></a>
+            </div>
+            <div class="container">
+                <a href="aboutus.html">ABOUT US</a>
+                <div class="dropdown">
+                  <button class="dropbtn">PRODUCT 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="logo.html">LOGO</a>
+                    <a href="photo.html">PHOTO</a>
+                    <a href="drawing.html">DRAWING</a>
+                  </div>
+                </div>
+                <a href="cart.html">CART</a>
+                <a href="contactus.html">CONTACT US</a>
+                <a href="#modal" class="v1">LOGIN</a>
+                <div class="modal" id="modal">
+                        <div class="modal__content">
+                            <a href="#" class="modal__close">&times;</a>
+                            <h1 class="modal__heading"><center>SIGN IN</center></h1>
+                            <form action="">
+                                <h3 class="modal__heading2">E-mail</h3>
+                                <input type="text" placeholder="E-mail" class="field_long"> 
+                                <h3 class="modal__heading2">Password</h3>
+                                <input type="password" placeholder="Password" class="field_long">
+                                <a href="" class="modal__box2" >SIGN IN</a>
+                            </form> 
+                        </div>
+                    </div> 
+            </div>
+        </div>
+    </nav>
+<!--ส่วนกลาง-->    
+<div class="Title1">
+    <h1>PHOTO</h1>
+    </div>
+    <div class="Title2">
+    <h1>Choose Your Product</h1>
+    </div>
+<div class="grid">
+<section class="info1">
+    <div class="info1_area">
+        <a href="sellphoto1.html"><img src="img/A02.png"> </a>
+        <div class="info1_text">
+          <h1>PHOTO package set 1</h1>
+          <p>If you are looking for images of employees in your organization or pictures of employees </p>
+          <p>doing activities in each job This package is very good for you. Because we will collect </p>
+          <p>images of people,including both single images Which the image can be used for both </p>
+          <p>employee identification and promotion images as well</p>
+          <p>&nbsp;</p>
+          <div class="buy3">
+          <button class="buy2" onclick="addToCart('PHOTO package set 1',30000,Notification())">ADD TO CART</button>
+          <div class="buy">  
+          <h1>30,000 ฿</h1> 
+          </div>
+          </div>
+        </div>
+  </div>
+</section>  
+<section class="info1">
+    <div class="info1_area">
+        <a href="sellphoto2.html"><img src="img/A10.png"> </a>
+        <div class="info1_text">
+          <h1>PHOTO package set 2</h1>
+          <p>This package is suitable for customers who want to promote a place or office.</p>
+          <p>Such as the restaurant business, hotels that emphasize the beauty and beauty of the </p>
+          <p>place that will help attract your customers well.</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <div class="buy3">
+          <button class="buy2" onclick="addToCart('PHOTO package set 2',40000,Notification())">ADD TO CART</button>
+          <div class="buy">  
+          <h1>40,000 ฿</h1> 
+          </div>
+          </div>
+    </div>
+  </div>
+</section>
+<section class="info1">
+      <div class="info1_area">
+        <a href="sellphoto3.html"><img src="img/A03.png"> </a>
+          <div class="info1_text">
+            <h1>PHOTO package set 3</h1>
+            <p>We can do animal photography. Both general pets that want to take advertising</p>
+            <p>pictures or take pictures of wildlife outside the area Because we have </p>
+            <p>photographers that are experts in photographing various animals.</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="buy3">
+            <button class="buy2" onclick="addToCart('PHOTO package set 3',50000,Notification())">ADD TO CART</button>
+            <div class="buy">  
+            <h1>50,000 ฿</h1> 
+            </div>
+            </div>
+      </div>
+    </div>
+  </section>
+  <section class="info1">
+        <div class="info1_area">
+            <a href="sellphoto4.html"><img src="img/A01.png"> </a>
+            <div class="info1_text">
+              <h1>PHOTO package set 4</h1>
+              <p>This package is very popular among customers who want to promote the product to look</p>
+              <p>outstanding and luxurious which We will arrange the composition of the image to be </p>
+              <p>compatible with the product to communicate the most outstanding features.</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <div class="buy3">
+              <button class="buy2" onclick="addToCart('PHOTO package set 4',50000,Notification())">ADD TO CART</button>
+              <div class="buy">  
+              <h1>50,000 ฿</h1> 
+              </div>
+              </div>
+        </div>
+      </div>
+    </section>  
+</div>
+<!--ส่วนกลาง-->
+          
+          <div class="page-wraper">
+
+          </div>
+          <div class="footer">
+                <div class="footer-content">
+                    
+                    <div class="footer-section about">
+                        <h1 class="logo-text"><span>E</span>-Here</h1>
+                        <p>E-Here is a E-commerce website for design everything you want</p>
+                        <div class="contact">
+                            <span><i class="fa-phone"></i> &nbsp; 123-456-789</span>
+                            <span><i class="fa-envelope"></i> &nbsp; info@Everything-Here.com</span>
+                        </div>
+                        <div class="socials">
+                            <a href="#"><img src="img/F.png"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><img src="img/I.png"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><img src="img/T.png"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><img src="img/Y.png"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="aboutus.html"><li>About us</li></a>
+                            <a href="product.html"><li>Product</li></a>
+                            <a href="contactus.html"><li>Contact us</li></a>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section contact-form">
+                        <h2>Contact us</h2>
+                        <br>
+                        <form action="index.html" method="post">
+                            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."><br>
+                            <input name="message" class="text-input contact-input" placeholder="Your message..."></textarea><br>
+                            <button type="submit" class="btn btn-big contact-btn">
+                                <i class="fas fa-envelope"></i>
+                                Send
+                            </button>
+                        </form>
+                    </div>
+        
+                </div>
+                <div class="footer-bottom">
+                    &copy; Everything-Here | Designed by CMM
+                </div>
+            </div>
+</body>
+</html>

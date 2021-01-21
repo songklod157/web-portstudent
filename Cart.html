@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>E-Here</title>
+    <link href="css/stylecart.css" type="text/css" rel="stylesheet">
+    <link href="css/footercart.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/stylenav.css">
+    <script src="./jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/assign.js"></script>
+    <script type="text/javascript">
+      $(window).on('scroll', function(){
+          if ($(window).scrollTop()){
+              $('nav').addClass('black');
+          }
+          else{
+              $('nav').removeClass('black');
+          }
+      })     
+      </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        updateHTML();
+      }
+      function updateHTML() {
+        let html = "";
+        let jsonCartInfo = JSON.parse(localStorage.jsonCartInfo);
+        let sum = 0;
+        for(const product of Object.entries(jsonCartInfo)) {
+          html += `<tr>
+                  <th scope="row">${product[0]}</th>
+                  <div class="price">
+                    <td>
+                      <button onClick="removeFromCart('${product[0]}',updateHTML)">-</button>
+                      &nbsp;${product[1].qty}&nbsp;
+                      <button onClick="addToCart('${product[0]}',${product[1].price},updateHTML)">+</button>
+                    </td>
+                  </div>
+                  <td>${product[1].price} ฿</td>
+                  <td class="delete" align="right">
+                    <div style="display:flex; flex-direction:row">
+                      <div style="width: 30px"></div>
+                      <input type="image" src="img/Cancel.png" alt="delete" onclick="removeAllFromCart('${product[0]}',updateHTML)">
+                    </div>
+                  </td>
+                  </tr>`
+          sum += product[1].qty * product[1].price;
+        }
+        $('#table-body-cart').html(html);
+        $('#total').html(`${sum} ฿`);
+      }
+    </script>
+</head>
+<body bgcolor="#252524">
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="img/white.png"></a>
+      </div>
+      <div class="container">
+        <a href="aboutus.html">ABOUT US</a>
+        <div class="dropdown">
+          <button class="dropbtn">PRODUCT 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="logo.html">LOGO</a>
+            <a href="photo.html">PHOTO</a>
+            <a href="drawing.html">DRAWING</a>
+          </div>
+        </div>
+        <a href="Cart.html">CART</a>
+        <a href="contactus.html">CONTACT US</a>
+        <a href="#modal" class="v1">LOGIN</a>
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <a href="#" class="modal__close">&times;</a>
+                <h1 class="modal__heading"><center>SIGN IN</center></h1>
+                <form action="">
+                    <h3 class="modal__heading2">E-mail</h3>
+                    <input type="text" placeholder="E-mail" class="field_long"> 
+                    <h3 class="modal__heading2">Password</h3>
+                    <input type="password" placeholder="Password" class="field_long">
+                    <a href="" class="modal__box2" >SIGN IN</a>
+                </form> 
+            </div>
+        </div> 
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <main>
+    <div align="middle" class="space">
+      <h1>Shopping</h1>
+      <table class="table1">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">QYT</th>
+            <th scope="col">Price</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="table-body-cart">
+                </tbody>
+              </table>
+              <div class="footer">
+                      <div class="footer-content">
+                          
+                          <div class="footer-section about">
+                              <h1 class="logo-text"><span>E</span>-Here</h1>
+                              <p>E-Here is a E-commerce website for design everything you want</p>
+                              <div class="contact">
+                                  <span><i class="fa-phone"></i> &nbsp; 123-456-789</span>
+                                  <span><i class="fa-envelope"></i> &nbsp; info@Everything-Here.com</span>
+                              </div>
+                              <div class="socials">
+                                <a href="#"><img src="img/F.png"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><img src="img/I.png"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><img src="img/T.png"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><img src="img/Y.png"><i class="fab fa-youtube"></i></a>
+                              </div>
+                          </div>
+                          
+                          <div class="footer-section links">
+                              <h2>Quick Links</h2>
+                              <ul>
+                                <a href="index.html"><li>Home</li></a>
+                                <a href="aboutus.html"><li>About us</li></a>
+                                <a href="product.html"><li>Product</li></a>
+                                <a href="contactus.html"><li>Contact us</li></a>
+                              </ul>
+                          </div>
+                          
+                          <div class="footer-section contact-form">
+                              <h2>Contact us</h2>
+                              <br>
+                              <form action="index.html" method="post">
+                                <div style="display: block">
+                                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."><br>
+                                    <input name="message" class="text-input contact-input" placeholder="Your message..."></textarea><br>
+                                </div>
+                                    <button type="submit" class="btn btn-big contact-btn">
+                                        <i class="fas fa-envelope"></i>
+                                        Send
+                                    </button>
+                              </form>
+              </div>
+              <div class="footer--blank"></div>
+              <div class="footer--fixed">
+                <div class="middle">
+                <p class="p2">Subtotal</p>
+                <div class="confirmbutton">
+                <button onclick="window.location.href='confirm.html'">Confirm order</button>
+                </div>
+                <p class="p1" id="total"></p>
+                </div>
+              </div>
+        </div>
+    </main>
+</body>
+</html>
